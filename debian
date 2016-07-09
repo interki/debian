@@ -11,4 +11,13 @@ Run sh /media/cdrom/VBoxLinuxAdditions.run, and follow the instructions on scree
 adduser yourusernamehere sudo
 
 ## identify ip address
-ifconfig 
+ifconfig
+
+## find fastest mirrors /update mirror list
+sudo apt-get install netselect-apt
+sudo netselect-apt
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo mv sources.list /etc/apt/sources.list
+
+## show disk useage 
+df -h
