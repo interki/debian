@@ -11,7 +11,7 @@ Run sh /media/cdrom/VBoxLinuxAdditions.run, and follow the instructions on scree
 adduser yourusernamehere sudo
 
 ## identify ip address
-ifconfig
+ip addr show
 
 ## find fastest mirrors /update mirror list
 sudo apt-get install netselect-apt
@@ -25,3 +25,21 @@ df -h
 
 ## search package list 
 apt-cache search <keyword>
+
+## show logfile live
+tail -f /var/log/squid3/access.log
+
+## show wd disk useage
+du -hs .
+
+## find file by name 
+sudo find / -name "test.example"
+
+## Set execute permission on your script:
+chmod +x script-name-here.sh
+## To run your script, enter:
+./script-name-here.sh
+
+fe80::a00:27ff:fe24:a032 
+sudo dpkg -i squid3-common_3.4.8-6+deb8u2_all.deb squid3_3.4.8-6+deb8u2_i386.deb squidclient_3.4.8-6+deb8u2_i386.deb
+
