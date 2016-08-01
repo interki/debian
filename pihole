@@ -8,3 +8,8 @@ pihole -g
 tail /etc/pihole/gravity.list
 
 tail -f /var/log/pihole.log
+
+
+
+##
+fe80::a00:27ff:fe24:a032 
