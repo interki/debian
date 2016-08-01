@@ -1,1 +1,4 @@
 sudo multitail -cv squid /var/log/squid3/access.log
+
+
+sudo dpkg -i squid3-common_3.4.8-6+deb8u2_all.deb squid3_3.4.8-6+deb8u2_i386.deb squidclient_3.4.8-6+deb8u2_i386.deb
