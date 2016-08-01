@@ -9,6 +9,12 @@ tail /etc/pihole/gravity.list
 
 tail -f /var/log/pihole.log
 
+## Possable On/Off #Stagged ads after /on
+
+sudo mv gravity.list gravity.list.off
+sudo service dnsmasq restart
+sudo mv gravity.list.off gravity.list
+sudo service dnsmasq restart
 
 
 ##
