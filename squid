@@ -5,5 +5,5 @@ sudo multitail -cv squid /var/log/squid3/access.log
 
 sudo multitail -cv squid -e "HIT" /var/log/squid3/access.log
 
-## Miss/Hit Colums --getting there 
-sudo multitail -s 2 -cv squid -e -I -cv squid -e "HIT" /var/log/squid3/access.log
+## Miss/Hit Columns 
+sudo multitail -s 2 -cv squid -e "MISS" /var/log/squid3/access.log -cv squid -e "HIT" /var/log/squid3/access.log
