@@ -1,4 +1,9 @@
+sudo dpkg -i squid3-common_3.4.8-6+deb8u2_all.deb squid3_3.4.8-6+deb8u2_i386.deb squidclient_3.4.8-6+deb8u2_i386.deb
+###
+
 sudo multitail -cv squid /var/log/squid3/access.log
 
+sudo multitail -cv squid -e "HIT" /var/log/squid3/access.log
 
-sudo dpkg -i squid3-common_3.4.8-6+deb8u2_all.deb squid3_3.4.8-6+deb8u2_i386.deb squidclient_3.4.8-6+deb8u2_i386.deb
+## Miss/Hit Colums --getting there 
+sudo multitail -s 2 -cv squid -e -I -cv squid -e "HIT" /var/log/squid3/access.log

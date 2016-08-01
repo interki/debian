@@ -41,5 +41,5 @@ chmod +x script-name-here.sh
 ./script-name-here.sh
 
 fe80::a00:27ff:fe24:a032 
-sudo dpkg -i squid3-common_3.4.8-6+deb8u2_all.deb squid3_3.4.8-6+deb8u2_i386.deb squidclient_3.4.8-6+deb8u2_i386.deb
+
 
