@@ -1,0 +1,1 @@
+sudo multitail -cv squid /var/log/squid3/access.log
