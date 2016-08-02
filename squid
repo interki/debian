@@ -7,3 +7,8 @@ sudo multitail -cv squid -e "HIT" /var/log/squid3/access.log
 
 ## Miss/Hit Columns 
 sudo multitail -s 2 -cv squid -e "MISS" /var/log/squid3/access.log -cv squid -e "HIT" /var/log/squid3/access.log
+
+## Cache manager access from squidclient
+squidclient mgr:info
+
+squidclient mgr:fqdncache
