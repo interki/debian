@@ -5,6 +5,7 @@ http://192.168.0.24/admin/index.php
 
 pihole -g
 
+## find ipv6 address of the pi-hole
 tail /etc/pihole/gravity.list
 
 tail -f /var/log/pihole.log

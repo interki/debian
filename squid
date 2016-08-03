@@ -18,7 +18,9 @@ squidclient mgr:fqdncache
 
 ##BSD#################
 sudo vim /usr/local/etc/squid/squid.conf
+
 /usr/local/squid/var/cache/
+!sudo du -hs /usr/local/squid/var/cache/
 
 #sudo multitail -s 2 -cv squid -e "MISS" /var/log/squid/access.log -cv squid -e "HIT" /var/log/squid/access.log
-sudo multitail -s 2 -e "MISS" /var/log/squid/access.log -e "HIT" /var/log/squid/access.log
+!sudo multitail -s 2 -e "MISS" /var/log/squid/access.log -e "HIT" /var/log/squid/access.log
