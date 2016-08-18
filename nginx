@@ -5,3 +5,7 @@ certbot renew --dry-run
 #If that appears to be working correctly, you can arrange for automatic renewal by adding a cron or systemd job which runs the following:
 
 certbot renew --quiet 
+
+!sudo vim /usr/local/etc/nginx/nginx.conf
+
+!sudo vim /var/log/nginx/access.log
