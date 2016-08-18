@@ -1,9 +1,11 @@
+
+##-lets.encript-##
+
+#install 
 sudo certbot certonly --webroot -w /usr/local/www/folder1 -d sequor.xyz -d www.sequor.xyz
-
+#dry run
 certbot renew --dry-run
-
 #If that appears to be working correctly, you can arrange for automatic renewal by adding a cron or systemd job which runs the following:
-
 certbot renew --quiet 
 
 !sudo vim /usr/local/etc/nginx/nginx.conf
