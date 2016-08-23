@@ -1,13 +1,19 @@
+###-install-###
+cd /usr/ports/security/py-certbot && make install clean
+!!OR!!
+pkg install py27-certbot
 
-##-lets.encript-##
-
-#install 
+###-configure-###
 sudo certbot certonly --webroot -w /usr/local/www/folder1 -d sequor.xyz -d www.sequor.xyz
-#dry run
+sudo certbot certonly --webroot -w /usr/local/www/piwik -d experimentum.xyz -d www.experimentum.xyz
+
+###-test the update script-###
 certbot renew --dry-run
+
 #If that appears to be working correctly, you can arrange for automatic renewal by adding a cron or systemd job which runs the following:
+
 certbot renew --quiet 
 
 !sudo vim /usr/local/etc/nginx/nginx.conf
 
-!sudo vim /var/log/nginx/access.log
+!sudo vim /var/log/nginx/access.logsudo vim /var/log/nginx/access.log
