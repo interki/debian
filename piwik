@@ -1,5 +1,8 @@
 ##-install guide location-##
 https://project.altservice.com/issues/757
+ 
+##-piwik nginx conf-##
+sudo vim /usr/local/etc/nginx/conf.d/piwik.example.com.conf
 
 ##-php config-##
 sudo vim /usr/local/etc/php-fpm.conf
@@ -7,3 +10,6 @@ sudo vim /usr/local/etc/php-fpm.conf
 ##-archive script-## 
 !sudo ./usr/local/www/piwik/misc/cron/archive.sh
 cd /usr/local/www/piwik/misc/cron/
+
+##-assign working dir-##
+!sudo chown -R piwik:www /usr/local/www/piwik
