@@ -17,3 +17,12 @@ certbot renew --quiet
 !sudo vim /usr/local/etc/nginx/nginx.conf
 
 !sudo vim /var/log/nginx/access.logsudo vim /var/log/nginx/access.log
+
+!sudo cd /usr/local/nginx/conf.d
+
+!cd /usr/local/nginx/
+
+!cd /usr/local/www
+
+!sudo ./usr/local/www/piwik/misc/cron/archive.sh
+cd /usr/local/www/piwik/misc/cron/
