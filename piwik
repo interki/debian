@@ -1,0 +1,9 @@
+##-install guide location-##
+https://project.altservice.com/issues/757
+
+##-php config-##
+sudo vim /usr/local/etc/php-fpm.conf
+
+##-archive script-## 
+!sudo ./usr/local/www/piwik/misc/cron/archive.sh
+cd /usr/local/www/piwik/misc/cron/
