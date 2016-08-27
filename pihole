@@ -4,11 +4,13 @@ curl -L install.pi-hole.net | bash
 ##-update web ui only-##
 sudo pihole -u
 
+##-admin web interface-##
+http://$ip.address/admin/index.php
 
-http://192.168.0.24/admin/index.php
-
+##-adlist include conf-##
 /etc/pihole/adlists.list
 
+##-main refresh/init script-##
 pihole -g
 
 ## find ipv6 address of the pi-hole
