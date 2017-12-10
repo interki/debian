@@ -1,5 +1,1 @@
->* -cur_console:f -cur_console:d:C:\Users\i5b\Desktop\git "C:\Windows\system32\cmd.exe" /k "%ConEmuBaseDir%\CmdInit.cmd" 
-
--cur_console:b -cur_console:d:C:\Users\i5b C:\Users\i5b\Downloads\putty.exe -load "R3"
-
-C:\Users\i5b\Downloads\putty.exe -load "R2" -new_console
+>* -cur_console:f -cur_console:d:C:\Users\i5b\Desktop\git "C:\Windows\system32\cmd.exe" /k "%ConEmuBaseDir%\CmdInit.cmd"
