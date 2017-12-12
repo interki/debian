@@ -228,7 +228,7 @@ def you_tube(channel):
     itera = s_range *2 if doubles == True else s_range
 
     try:
-        oldblist = pickle.load( open( channel, "rb") )
+        oldblist = pickle.load( open( (channel+".p"), "rb") )
         pickle_found = True
         # print (oldblist)
         # last_yt_title = oldblist[1][1]
@@ -328,7 +328,7 @@ def you_tube(channel):
         # blist.insert(2, cblock_end)
 
         # pickle.dump( blist, open( "pbyt.p", "wb") )
-        pickle.dump( blist, open( channel, "wb") )
+        pickle.dump( blist, open( (channel+".p"), "wb") )
 
         # widths = [max(map(len, col)) for col in zip(*blist)]
         # for row in blist:
