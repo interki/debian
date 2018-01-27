@@ -38,7 +38,14 @@ while True:
             link2 = (link[2:-5])
             run = str("start /B mpv \"{}\" --no-terminal --osd-level=0".format(link2))
             handle = Popen((run), stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True)
-
+        if "https://www.twitch.tv/" in recent_value:
+            print("Twitch Channel Match")
+            run = str("streamlink {} best --player-passthrough=hls --stream-url".format(recent_value))
+            handle = Popen((run), stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True)
+            link = (str(handle.stdout.read()))
+            link2 = (link[2:-5])
+            run = str("start /B mpv \"{}\" --no-terminal".format(link2))
+            handle = Popen((run), stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True)
 
 
     time.sleep(1.0) 
