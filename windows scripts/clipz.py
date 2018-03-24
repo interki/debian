@@ -39,6 +39,14 @@ while True:
             link2 = (link[2:-5])
             run = str("start /B mpv \"{}\" --no-terminal".format(link2))
             handle = Popen((run), stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True)
+        if "https://vimeo.com/" in recent_value:
+            print("Vimeo Match")
+            run = str("youtube-dl -f http-1080p -g {} --no-warnings".format(recent_value))
+            handle = Popen((run), stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True)
+            link = (str(handle.stdout.read()))
+            link2 = (link[2:-3])
+            run = str("start /B mpv \"{}\" --no-terminal".format(link2))
+            handle = Popen((run), stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True)
         if "https://www.twitch.tv/videos/" in recent_value:
             print("Twitch VOD Match")
             # run = str("streamlink {} best --player-passthrough=hls --stream-url".format(recent_value))
