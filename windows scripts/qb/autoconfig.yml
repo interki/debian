@@ -20,8 +20,6 @@ settings:
         <Ctrl+j>: scroll-px 0 100
         <Ctrl+k>: scroll-px 0 -100
         W: hint links spawn mpv --ontop --loop --geometry=100%:0% {hint-url}
-  colors.completion.even.bg:
-    global: '#585858'
   confirm_quit:
     global:
     - never

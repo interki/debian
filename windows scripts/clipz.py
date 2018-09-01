@@ -21,7 +21,8 @@ while True:
             # run = str("start /B mpv \"--ytdl-format=bestvideo[height<=1920]+bestaudio/best[height<=1920]\" {} --no-terminal --osd-level=0".format(recent_value))
             if "&" in recent_value:
                 sep = ("&")
-                trimmed_value = sep.join(recent_value.split(sep)[:-1])
+                # trimmed_value = sep.join(recent_value.split(sep)[:-1])
+                trimmed_value = sep.join(recent_value.split(sep)[:1])
                 print (trimmed_value)
                 run = str("start /B mpv \"--ytdl-format=bestvideo[height<=1920]+bestaudio/best[height<=1920]\" {} --no-terminal --osd-level=0 --cache=99999 ".format(trimmed_value))
                 handle = Popen((run), stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True)
@@ -54,8 +55,8 @@ while True:
             handle = Popen((run), stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True)
             link = (str(handle.stdout.read()))
             link2 = (link[2:-5])
-            # run = str("start /B mpv \"{}\" --no-terminal --osd-level=0".format(link2))
-            run = str("start /B mpv \"{}\" --demuxer-thread=yes and --demuxer-readahead-secs=5000 --no-terminal --osd-level=0".format(link2))
+            run = str("start /B mpv \"{}\" --no-terminal --osd-level=0".format(link2))
+            # run = str("start /B mpv \"{}\" --demuxer-thread=yes and --demuxer-readahead-secs=5000 --no-terminal --osd-level=0".format(link2))
             handle = Popen((run), stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True)
         elif "https://www.twitch.tv/" in recent_value:
             print("Twitch Channel Match")

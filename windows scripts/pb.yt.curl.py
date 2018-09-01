@@ -510,8 +510,8 @@ def twitch():
 
     if player == "mpv": 
         # run = str("start mpv.exe {} --demuxer-thread=yes and --demuxer-readahead-secs=10000 cache=1000000 --no-terminal".format(link2))
-        # run = str("start mpv.exe {} --demuxer-thread=yes and --demuxer-readahead-secs=5000 --no-terminal".format(link2))
-        run = str("start mpv.exe {} --no-terminal".format(link2))
+        run = str("start mpv.exe {} --demuxer-thread=yes and --demuxer-readahead-secs=5000 --no-terminal".format(link2))
+        # run = str("start mpv.exe {} --no-terminal".format(link2))
     if player == "mpc-HC":
         run = str("\"C:\Program Files\MPC-HC\mpc-hc64.exe\" {}".format(link2))
     if player == "baka":
