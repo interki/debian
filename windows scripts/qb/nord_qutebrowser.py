@@ -191,7 +191,8 @@ c.colors.messages.warning.border = nord['orange']
 
 ## Foreground color a warning message.
 ## Type: QssColor
-c.colors.messages.warning.fg = nord['base3']
+# c.colors.messages.warning.fg = nord['base3']
+c.colors.messages.warning.fg = nord['nord1']
 
 ## Background color for prompts.
 ## Type: QssColor
@@ -235,7 +236,7 @@ c.colors.statusbar.command.fg = nord['base3']
 
 ## Background color of the statusbar in private browsing + command mode.
 ## Type: QssColor
-c.colors.statusbar.command.private.bg = nord['base01']
+c.colors.statusbar.command.private.bg = nord['tabselected']
 
 ## Foreground color of the statusbar in private browsing + command mode.
 ## Type: QssColor
@@ -267,7 +268,7 @@ c.colors.statusbar.passthrough.fg = nord['base3']
 
 ## Background color of the statusbar in private browsing mode.
 ## Type: QssColor
-c.colors.statusbar.private.bg = nord['base01']
+c.colors.statusbar.private.bg = nord['tabselected']
 
 ## Foreground color of the statusbar in private browsing mode.
 ## Type: QssColor

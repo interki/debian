@@ -17,9 +17,13 @@ settings:
   bindings.commands:
     global:
       normal:
+        <Alt+j>: repeat 2 scroll down
+        <Alt+k>: repeat 2 scroll up
         <Ctrl+j>: scroll-px 0 100
         <Ctrl+k>: scroll-px 0 -100
         W: hint links spawn mpv --ontop --loop --geometry=100%:0% {hint-url}
+  colors.completion.even.bg:
+    global: '#585858'
   confirm_quit:
     global:
     - never
@@ -61,6 +65,8 @@ settings:
     global: qt-quick
   scrolling.bar:
     global: true
+  scrolling.smooth:
+    global: true
   search.ignore_case:
     global: smart
   search.incremental:
@@ -75,4 +81,6 @@ settings:
     global:
       DEFAULT: https://duckduckgo.com/?q={}
       g: https://www.google.com/search?hl=en&q={}
+      gi: google.com#q={}&tbm=isch
+      ma: https://www.google.com/maps/search/?api=1&query={}
       yt: https://www.youtube.com/search?hl=en&q={}
